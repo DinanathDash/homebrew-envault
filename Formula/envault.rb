@@ -5,20 +5,20 @@
 class Envault < Formula
   desc "Envault CLI - Securely manage your environment variables"
   homepage "https://envault.tech"
-  version "1.10.0"
+  version "1.11.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/DinanathDash/Envault/releases/download/v1.10.0/envault_Darwin_x86_64.tar.gz"
-      sha256 "4d029c95d8da06b8d670b390b84edb1abd546dd8b0c2192a316e2c86283896be"
+      url "https://github.com/DinanathDash/Envault/releases/download/v1.11.0/envault_Darwin_x86_64.tar.gz"
+      sha256 "825be18439a1f8bf25a60c1271b3791e41e0a0c85107b6579e9a945e92241395"
 
       def install
         bin.install "envault"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/DinanathDash/Envault/releases/download/v1.10.0/envault_Darwin_arm64.tar.gz"
-      sha256 "d698e537f757fe6a0ae2c73ca23731666acba9c390caf6e6dd039e73a33034ca"
+      url "https://github.com/DinanathDash/Envault/releases/download/v1.11.0/envault_Darwin_arm64.tar.gz"
+      sha256 "0f4dd0bc61987281da1c8f3c2db3a863e07bf76c196ab342875cd62c422457a6"
 
       def install
         bin.install "envault"
@@ -28,15 +28,15 @@ class Envault < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DinanathDash/Envault/releases/download/v1.10.0/envault_Linux_x86_64.tar.gz"
-      sha256 "cfed96c3e4692de76c92b139c34ad8eb350528d198f44ae89feae1692f1ef785"
+      url "https://github.com/DinanathDash/Envault/releases/download/v1.11.0/envault_Linux_x86_64.tar.gz"
+      sha256 "c1722f4d0cdf2a7b2f497ca49b82819a5a4907d99c5f21be43d6550e747da7e8"
       def install
         bin.install "envault"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DinanathDash/Envault/releases/download/v1.10.0/envault_Linux_arm64.tar.gz"
-      sha256 "8984d82353d42e0af2e110588dce9d06b16530c4f1fa7023b1839c6310c8c1da"
+      url "https://github.com/DinanathDash/Envault/releases/download/v1.11.0/envault_Linux_arm64.tar.gz"
+      sha256 "5a38f04bf759c4e3c2e257f47221aff93cbca2d5649594b0a14c6f2cb609f80f"
       def install
         bin.install "envault"
       end
