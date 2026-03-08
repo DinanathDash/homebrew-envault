@@ -5,20 +5,20 @@
 class Envault < Formula
   desc "Envault CLI - Securely manage your environment variables"
   homepage "https://envault.tech"
-  version "1.20.1"
+  version "1.21.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/DinanathDash/Envault/releases/download/v1.20.1/envault_Darwin_x86_64.tar.gz"
-      sha256 "b0dd4f03bfa447f67eb0d65f45701b07204aa4cbf3f6b0de2c0f9d5586eeaa24"
+      url "https://github.com/DinanathDash/Envault/releases/download/v1.21.0/envault_Darwin_x86_64.tar.gz"
+      sha256 "28d5fe45490931750d4b4d4d5ba354c8f4bb81114619ee28c16b24c73c7fe4c9"
 
       define_method(:install) do
         bin.install "envault"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/DinanathDash/Envault/releases/download/v1.20.1/envault_Darwin_arm64.tar.gz"
-      sha256 "2461075c3169ef959f34a4d6e5c9f6bd37fc178d53702844c0bee473ea668120"
+      url "https://github.com/DinanathDash/Envault/releases/download/v1.21.0/envault_Darwin_arm64.tar.gz"
+      sha256 "bcffb1695f74787c75890b6c93f3c4167fbd0e7f4a59eebf5d7b14ced43b5d36"
 
       define_method(:install) do
         bin.install "envault"
@@ -28,15 +28,15 @@ class Envault < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DinanathDash/Envault/releases/download/v1.20.1/envault_Linux_x86_64.tar.gz"
-      sha256 "792b2a750c22f216c637b5663e25c972abeeb1dfa1cd42ccb477200fe0df852e"
+      url "https://github.com/DinanathDash/Envault/releases/download/v1.21.0/envault_Linux_x86_64.tar.gz"
+      sha256 "e02056903d2470a1b37ea8aa23fc4051d904cdf72111a54631ad84fe88483b6b"
       define_method(:install) do
         bin.install "envault"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DinanathDash/Envault/releases/download/v1.20.1/envault_Linux_arm64.tar.gz"
-      sha256 "97ca3fd487eb4c427cb4f9300a18bfbc681638fd0642f1a77dc71ba431f40c50"
+      url "https://github.com/DinanathDash/Envault/releases/download/v1.21.0/envault_Linux_arm64.tar.gz"
+      sha256 "46ff81fa38c4b50cfb211627835f8eb31f182c2eb3fc9d787558568993f4481c"
       define_method(:install) do
         bin.install "envault"
       end
