@@ -3,7 +3,7 @@ cask "envault" do
   name "envault"
   desc "Envault CLI - Securely manage your environment variables"
   homepage "https://envault.tech"
-  version "1.23.1"
+  version "1.24.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "envault" do
     on_intel do
       url "https://github.com/DinanathDash/Envault/releases/download/v#{version}/envault_Darwin_x86_64.tar.gz",
         verified: "github.com/DinanathDash/Envault"
-      sha256 "b0e960a5da482217c24a98333c25ffa060f2e1b07d0c702be93dfd8fa36f02a2"
+      sha256 "c7017fefac02545f7abb5bbaa2431eb2ab5f898559c0cff77afb42552d809246"
     end
     on_arm do
       url "https://github.com/DinanathDash/Envault/releases/download/v#{version}/envault_Darwin_arm64.tar.gz",
         verified: "github.com/DinanathDash/Envault"
-      sha256 "8c2e85a6119161259d138bea17446f1c9e8b1704c8792ebfdf562e9ece345e54"
+      sha256 "8bc05c6916e94407c8a6eeb63e792a67f058f722c97e819a71bb3464b40efeef"
     end
   end
 
@@ -28,12 +28,12 @@ cask "envault" do
     on_intel do
       url "https://github.com/DinanathDash/Envault/releases/download/v#{version}/envault_Linux_x86_64.tar.gz",
         verified: "github.com/DinanathDash/Envault"
-      sha256 "ae7a0999ffa522e06d1826c8941bd2fe0198130ae3f1590860e0079ed06398b3"
+      sha256 "483c5e998aae9b40970afdb8da37cf021eb2828125091dcc8ab10b10d890a91d"
     end
     on_arm do
       url "https://github.com/DinanathDash/Envault/releases/download/v#{version}/envault_Linux_arm64.tar.gz",
         verified: "github.com/DinanathDash/Envault"
-      sha256 "327236fc2584a4f8456acf3bd27feedaa63fc5010ef383f695cd32abc3c78978"
+      sha256 "cf91f0925cf573ba41f2b9ab2949ac10cdf988665c7423f7a7caebdcd1cf547e"
     end
   end
 
